@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karthick Raja V - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.162.0/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div id="background-canvas"></div>
+    
+    <nav class="navbar">
+        <div class="container">
+            <span class="logo gradient-text">Karthick Raja V</span>
+            
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-links">
+                <a href="#objective" class="nav-link">Objective</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu">
+        <a href="#objective" class="mobile-link">Objective</a>
+        <a href="#education" class="mobile-link">Education</a>
+        <a href="#experience" class="mobile-link">Experience</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+
+    <main class="container">
+        <section class="hero">
+            <div class="profile-container">
+                <div class="profile-wrapper">
+                    <img src="D:\Intern@LT\Profile.jpeg" 
+                         alt="Profile" 
+                         class="profile-image">
+                    <div class="profile-ring"></div>
+                </div>
+            </div>
+            <h1 class="name gradient-text">Karthick Raja V</h1>
+            <p class="title">🚀 Full-Stack MERN Developer | IoT Enthusiast | Innovator</p>
+            <div class="social-links">
+                <a href="https://github.com/Raja-28" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/karthick-raja-v-2824v" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+                <a href="https://www.hackerrank.com/profile/rajaccet28" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <section id="objective" class="section glass-card" data-aos="fade-up">
+            <h2 class="section-title gradient-text">Objective</h2>
+            <p class="section-content">
+                Passionate about building cutting-edge tech solutions, leveraging Full-Stack Development, IoT, and AI to create impactful innovations.
+            </p>
+        </section>
+
+        <section id="education" class="section glass-card" data-aos="fade-up">
+            <h2 class="section-title gradient-text">Education</h2>
+            <div class="education-list">
+                <div class="education-item">
+                    <h3>Chettinad College of Engineering and Technology</h3>
+                    <p>B.E CSE | 8.4 GPA | 2022 - Present</p>
+                </div>
+                <div class="education-item">
+                    <h3>Government Boys Higher Secondary School</h3>
+                    <p>HSC | 64% | 2021 - 2022</p>
+                </div>
+                <div class="education-item">
+                    <h3>Kandaswami Kandar Matric Higher Secondary School</h3>
+                    <p>SSLC | 87% | 2019 - 2020</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section glass-card" data-aos="fade-up">
+            <h2 class="section-title gradient-text">Experience</h2>
+            <div class="experience-item">
+                <h3>IoT Engineer | Pixfect</h3>
+                <p class="date">May 2024 - Present</p>
+                <p class="description">Designing intelligent IoT solutions for automation and real-world applications.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="section glass-card" data-aos="fade-up">
+            <h2 class="section-title gradient-text">Skills</h2>
+            <div class="skills-chart">
+                <canvas id="skillsChart"></canvas>
+            </div>
+        </section>
+
+        <section id="contact" class="section glass-card" data-aos="fade-up">
+            <h2 class="section-title gradient-text">Contact</h2>
+            <div class="contact-links">
+                <a href="mailto:rajaccet28@gmail.com" class="contact-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    <span>rajaccet28@gmail.com</span>
+                </a>
+                <a href="https://splendid-quokka-029aa7.netlify.app" target="_blank" rel="noopener noreferrer" class="contact-link">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                    <span>Portfolio</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <script src="background.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
