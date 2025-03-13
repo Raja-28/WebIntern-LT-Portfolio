@@ -43,14 +43,17 @@ body {
 
 /* Navbar */
 .navbar {
-    position: sticky;
+   position: sticky;
     top: 0;
     width: 100%;
     backdrop-filter: blur(10px);
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    background: rgba(0, 0, 0, 0.6);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     z-index: 1000;
     padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navbar .container {
@@ -69,8 +72,18 @@ body {
 
 /* Ensure nav-links are visible in desktop view */
 .nav-links {
+   display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.nav-links.active {
     display: flex;
-    gap: 2rem;
 }
 
 .nav-link {
@@ -87,11 +100,13 @@ body {
 }
 
 .mobile-menu-btn {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     background: none;
     border: none;
     cursor: pointer;
-    padding: 0.5rem;
+    padding: 5px;
 }
 
 .mobile-menu-btn span {
@@ -132,6 +147,7 @@ body {
     color: var(--primary);
     transform: translateX(10px);
 }
+
 
 /* Hero Section */
 .hero {
@@ -531,6 +547,10 @@ body {
 @media (min-width: 768px) {
     .nav-links {
         display: flex;
+        flex-direction: row;
+        position: static;
+        background: none;
+        padding: 0;
         gap: 1.5rem;
     }
 
