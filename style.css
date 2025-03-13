@@ -43,11 +43,11 @@ body {
 
 /* Navbar */
 .navbar {
-   position: sticky;
+    position: sticky;
     top: 0;
     width: 100%;
     backdrop-filter: blur(10px);
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.7);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     z-index: 1000;
     padding: 1rem 2rem;
@@ -55,6 +55,7 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
 
 .navbar .container {
     display: flex;
@@ -99,6 +100,7 @@ body {
     transform: scale(1.05);
 }
 
+/* Align Hamburger Menu to the Right */
 .mobile-menu-btn {
     display: flex;
     flex-direction: column;
@@ -106,8 +108,13 @@ body {
     background: none;
     border: none;
     cursor: pointer;
-    padding: 5px;
+    padding: 10px;
+    position: absolute;
+    right: 20px; /* Move to the right corner */
+    top: 50%;
+    transform: translateY(-50%);
 }
+
 
 .mobile-menu-btn span {
     display: block;
