@@ -270,7 +270,28 @@ body {
     font-size: 0.9rem;
 }
 
-/* Experience */
+/* Certifications */
+.certifications-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.certification-item {
+    border-left: 2px solid var(--primary);
+    padding-left: 1rem;
+    transition: all 0.3s ease;
+}
+
+.certification-item:hover {
+    transform: translateX(10px);
+}
+
+.certification-item p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
+
 /* Experience */
 .experience-list {
     display: flex;
