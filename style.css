@@ -49,12 +49,14 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     z-index: 1000;
     padding: 1rem 0;
+    width: 100%;
 }
 
 .navbar .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 2rem; /* Adjust spacing */
 }
 
 .logo {
@@ -63,7 +65,8 @@ body {
 }
 
 .nav-links {
-    display: none;
+    display: flex; /* Show navigation links in desktop */
+    gap: 1.5rem; /* Space between links */
 }
 
 .nav-link {
@@ -71,6 +74,7 @@ body {
     text-decoration: none;
     padding: 0.5rem 1rem;
     transition: all 0.3s ease;
+    font-size: 1rem;
 }
 
 .nav-link:hover {
