@@ -275,7 +275,17 @@
             </div>
         </section>
     </main>
+    <script> 
+        document.addEventListener("DOMContentLoaded", function () {
+        const menuBtn = document.querySelector(".mobile-menu-btn");
+        const navLinks = document.querySelector(".nav-links");
 
+        menuBtn.addEventListener("click", function () {
+            navLinks.classList.toggle("active");
+            menuBtn.classList.toggle("active");
+        });
+    });
+    </script>
     <script src="background.js"></script>
     <script src="main.js"></script>
 </body>
