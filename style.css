@@ -382,6 +382,84 @@ body {
     font-size: 0.9rem;
 }
 
+/* Awards & Honors */
+.awards-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.award-item {
+    position: relative;
+    border-left: 3px solid var(--primary);
+    padding: 1rem 1rem 1rem 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.award-item:hover {
+    transform: translateX(10px);
+    background: var(--primary-light);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Adding a glowing effect on hover */
+.award-item::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: var(--primary);
+    transform: translateY(-50%);
+    transition: 0.3s ease-in-out;
+}
+
+.award-item:hover::before {
+    width: 8px;
+}
+
+/* Title Styling */
+.award-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.award-item:hover h3 {
+    color: var(--accent);
+}
+
+/* Date Styling */
+.date {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-bottom: 0.3rem;
+    display: block;
+}
+
+/* Description Styling */
+.award-item p {
+    color: var(--text);
+    font-size: 1rem;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.award-item:hover p {
+    opacity: 1;
+}
+
+
+.award-item {
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
 
 /* Animations */
 @keyframes pulse {
