@@ -271,9 +271,21 @@ body {
 }
 
 /* Experience */
+/* Experience */
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
 .experience-item {
     border-left: 2px solid var(--primary);
     padding-left: 1rem;
+    transition: all 0.3s ease;
+}
+
+.experience-item:hover {
+    transform: translateX(10px);
 }
 
 .experience-item h3 {
@@ -286,6 +298,12 @@ body {
     font-size: 0.9rem;
     margin-bottom: 0.5rem;
 }
+
+.description {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
 
 /* Skills */
 .skills-chart {
