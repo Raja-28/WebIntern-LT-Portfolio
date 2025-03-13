@@ -355,6 +355,34 @@ body {
     transform: translateX(10px);
 }
 
+/* Volunteering Experience */
+.volunteering-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.volunteering-item {
+    border-left: 2px solid var(--primary);
+    padding-left: 1rem;
+    transition: all 0.3s ease;
+}
+
+.volunteering-item:hover {
+    transform: translateX(10px);
+}
+
+.volunteering-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.volunteering-item p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+
 /* Animations */
 @keyframes pulse {
     0%, 100% { transform: scale(1); }
