@@ -363,9 +363,21 @@ body {
 }
 
 .volunteering-item {
-    border-left: 2px solid var(--primary);
+    position: relative;
+    border-left: 2px solid var(--primary); /* Left margin line */
     padding-left: 1rem;
     transition: all 0.3s ease;
+}
+
+.volunteering-item::before {
+    content: "";
+    position: absolute;
+    left: -6px; /* Adjust based on design */
+    top: 0;
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary); /* Small dot effect */
+    border-radius: 50%;
 }
 
 .volunteering-item:hover {
