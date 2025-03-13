@@ -45,28 +45,32 @@ body {
 .navbar {
     position: sticky;
     top: 0;
+    width: 100%;
     backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     z-index: 1000;
-    padding: 1rem 0;
-    width: 100%;
+    padding: 1rem 2rem;
 }
 
 .navbar .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem; /* Adjust spacing */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    color: var(--text);
 }
 
+/* Ensure nav-links are visible in desktop view */
 .nav-links {
-    display: flex; /* Show navigation links in desktop */
-    gap: 1.5rem; /* Space between links */
+    display: flex;
+    gap: 2rem;
 }
 
 .nav-link {
