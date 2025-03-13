@@ -54,7 +54,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative; /* Important for absolute positioning of menu button */
 }
+
 
 
 .navbar .container {
@@ -110,10 +112,12 @@ body {
     cursor: pointer;
     padding: 10px;
     position: absolute;
-    right: 20px; /* Move to the right corner */
+    right: 20px; /* Moves to the right corner */
     top: 50%;
     transform: translateY(-50%);
+    z-index: 1100; /* Ensures it stays on top */
 }
+
 
 
 .mobile-menu-btn span {
