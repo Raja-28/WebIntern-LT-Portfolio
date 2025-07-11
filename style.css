@@ -71,6 +71,7 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--text);
+    white-space: nowrap;
 }
 
 /* Ensure nav-links are visible in desktop view */
